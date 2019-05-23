@@ -1,66 +1,647 @@
-@extends('cms-frontend::layout.master')
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 
-@if (isset($page))
-    @section('seoDescription') {{ $page->seo_description }} @endsection
-    @section('seoKeywords') {{ $page->seo_keywords }} @endsection
-@endif
+<!DOCTYPE html>
+<html lang="zxx">
 
-@section('content')
+<head>
+    <title>Stalled Business Bootstrap Responsive Template | Home :: W3layouts</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Stalled Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
 
-<div class="homepage-banner">
-    <h1>{{ config('app.name') }}</h1>
-    <p class="lead">Fluent, Minimalism</p>
-</div>
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
 
-<div class="container">
+    </script>
+    <!-- //Meta tag Keywords -->
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Bootstrap-Core-CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!-- /Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
+    <!-- //Fonts -->
 
-    @if (isset($page))
-        {!! $page->entry !!}
-    @else
-        <div class="row homepage-container">
-            <div class="col-md-6">
-                <div class="well">
-                    <h3>Basics</h3>
-                    <p>In order to add content to this page login to Cms and add a home page. Remember you can set up
-                        your own Auth for Cms or run the artisan command: <code>php artisan grafite:cms-setup</code> to get
-                        a prebuilt auth system.</p>
-                    <p>Once you're all set up try building a menu with slug: main, and a widget with the slug: widget. You'll see the theme display them right away!</p>
+</head>
+
+<body>
+    <!-- mian-content -->
+    <section class="main-content" id="home">
+        <div class="layer">
+            <!--/Top-Header-->
+            
+            <!--//Top-Header-->
+            <!-- header -->
+            <header class="header">
+                <div class="container-fluid px-lg-5">
+                    <!-- nav -->
+                    <nav class="py-4">
+                        <div id="logo">
+                            <h1> <a href="{{url('/')}}"> </a></h1>
+                        </div>
+
+                        <label for="drop" class="toggle">Menu</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="menu mt-2">
+                            <li class="mr-lg-4 mr-3 active"><a href="#">Home</a></li>
+                            <li class="mr-lg-4 mr-3"><a href="#about" class="scroll">About</a></li>
+                            @if(Auth::user())
+                            <li class="mr-lg-4 mr-3"><a href="{{url('dashboard')}}" class="scroll">Dashboard</a></li>
+                            @endif
+                            <li class="mr-lg-4 mr-3">
+                                <!-- First Tier Drop Down -->
+                                <label for="drop-2" class="toggle">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
+                                <a href="#">Akun <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                                <input type="checkbox" id="drop-2" />
+                                <ul>
+                                    @if(!Auth::user())
+                                    <li><a href="{{url('login')}}" class="scroll">Login</a></li>
+                                    <li><a href="{{url('register')}}" class="scroll">Register</a></li>
+                                    @else
+                                    <li><a href="{{url('logout')}}" class="scroll">Logout</a></li>
+                                    @endif
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- //nav -->
+                </div>
+            </header>
+            <!-- //header -->
+            <!-- banner -->
+            <div class="banner-info-wthree">
+                <h2>
+                </h2>
+                <h3>Aplikasi pinjam ruang
+                </h3>
+                <a href="#about" class="learn-link-bnr1 btn">Read More</a>
+                <a href="#about" class="scroll">
+                    <div class="icon-scroll">
+                        <div class="mouse">
+                            <div class="wheel"></div>
+                        </div>
+                        <div class="icon-arrows">
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- //banner -->
+            
+        </div>
+    </section>
+    <!--// mian-content -->
+    <!--/ab -->
+    <section class="about py-5" id="about">
+        <div class="container">
+            <div class="inner-sec-w3ls-pyt py-lg-5 py-3">
+                <h3 class="tittle text-center mb-lg-5 mb-3 px-lg-5"><span class="sub-tittle">About.</span>Tentang Aplikasi</h3>
+                <div class="feature-grids row mt-3 mb-lg-5 mb-3 text-center">
+                    <div class="col-lg-4">
+                        <div class="bottom-gd px-3">
+                            <span class="fa fa-building-o" aria-hidden="true"></span>
+                            <h3 class="my-4">Market Research</h3>
+                            <p>Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullamcorper dui turpis.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="bottom-gd2-active px-3">
+                            <span class="fa fa-cogs" aria-hidden="true"></span>
+                            <h3 class="my-4">Keyword Targeting</h3>
+                            <p>Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullamcorper dui turpis.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="bottom-gd px-3">
+                            <span class="fa fa-cogs" aria-hidden="true"></span>
+                            <h3 class="my-4">Email Marketing</h3>
+                            <p>Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullamcorper dui turpis.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- services -->
+                <div class="fetured-info pt-lg-5" id="services">
+                    <h3 class="tittle  text-center my-lg-5 my-3"><span class="sub-tittle">What we do</span> Our Featured Services</h3>
+                    <div class="row fetured-sec mt-lg-5 mt-3">
+                        <div class="col-lg-6 p-0">
+                            <div class="img-effect">
+                                <img src="images/1.jpg" alt="" class="img-fluid image1">
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6 serv_bottom feature-grids">
+                            <div class="featured-left text-left">
+                                <div class="bottom-gd px-3">
+                                    <span class="fa fa-hospital-o" aria-hidden="true"></span>
+                                    <h3 class="my-4">
+                                        Start Your Campaign</h3>
+                                    <p>Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullamcorper dui turpis.</p>
+                                </div>
+                                <div class="bottom-gd fea active p-4">
+                                    <span class="fa fa-key" aria-hidden="true"></span>
+                                    <h3 class="my-3">Engage New Users</h3>
+                                    <p>Integer sit amet mattis quam, sit amet ultricies velit.convallis at tellus. Nulla quis lorem ipnut libero malesuada feugiat..</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="well">
-                    <h3>Custom Templates</h3>
-                    <p>By default the homepage has its own template but you can add any by following these details:</p>
-                    <p>To create custom templates for different purposes simply make a view in <br>
-                        the <code>resources/themes/{theme-name}/{module-name}</code> directory that looks similar to: `xxxx-template.blade.php`. <br>
-                        This means you still have full control of blade templating but your pages can easily swap out views.</p>
+            <!-- //services -->
+        </div>
+    </section>
+    <!-- //ab -->
+    <!--/counter-->
+    <section class="stats py-lg-5 py-4" id="stats">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <div class="counter">
+                        <h3 class="timer count-title count-number">100</h3>
+                        <p class="count-text">Support</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="counter">
+                        <h3 class="timer count-title count-number">1700</h3>
+                        <p class="count-text">Happy Hours</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="counter">
+                        <h3 class="timer count-title count-number">1200</h3>
+                        <p class="count-text">Trusted Sub Titles</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="counter">
+                        <h3 class="timer count-title count-number">157</h3>
+                        <p class="count-text">Cups of Coffee</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row homepage-container">
-            <div class="col-md-6">
-                <div class="well">
-                    <h3>Custom Themes</h3>
-                    <p>You can easily generate a theme template via the command: <code>php artisan theme:generate {name}</code> </p>
-                    <p>The theme's files will be placed in the following directory: <code>resources/themes/{name}</code></p>
-                    <p>To include files either use the blade code: <code>&#64;theme</code> or include a file with the <code>cms-frontend::</code> namespace.</p>
+    </section>
+    <!--//counter-->
+    <!--/team -->
+    <section class="banner-bottom py-lg-5 py-4" id="team">
+        <div class="container py-lg-5">
+            <div class="inner-sec-w3ls-pyt speak">
+                <h3 class="tittle text-center my-lg-5 my-3"><span class="sub-tittle">Amazing People</span> Professional Team</h3>
+                <div class="row mt-lg-5 mt-4">
+                    <div class="col-md-4 team-gd text-center">
+                        <div class="team-img mb-4">
+                            <img src="images/team2.jpg" class="img-fluid" alt="user-image">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="mt-md-4 mt-3"><span class="sub-tittle-team">Sub Title</span> Jason Donoghue</h3>
+                            <p>Lorem Ipsum has been the industry's standard since the 1500s.</p>
+                            <ul class="top-right-info text-center">
+
+                                <li class="ml-3 mr-1">
+                                    <a href="#">
+                                            <span class="fa fa-facebook-f"></span>
+                                        </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                            <span class="fa fa-twitter"></span>
+                                        </a>
+                                </li>
+                                <li class="mx-1">
+                                    <a href="#">
+                                            <span class="fa fa-google-plus"></span>
+                                        </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 team-gd second text-center">
+                        <div class="team-img mb-4">
+                            <img src="images/team1.jpg" class="img-fluid" alt="user-image">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="mt-md-4 mt-3"><span class="sub-tittle-team">Sub Title</span> Mariana Noe</h3>
+                            <p>Lorem Ipsum has been the industry's standard since the 1500s.</p>
+                            <ul class="top-right-info text-center">
+
+                                <li class="ml-3 mr-1">
+                                    <a href="#">
+                                            <span class="fa fa-facebook-f"></span>
+                                        </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                            <span class="fa fa-twitter"></span>
+                                        </a>
+                                </li>
+                                <li class="mx-1">
+                                    <a href="#">
+                                            <span class="fa fa-google-plus"></span>
+                                        </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 team-gd text-center">
+                        <div class="team-img mb-4">
+                            <img src="images/team2.jpg" class="img-fluid" alt="user-image">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="mt-md-4 mt-3"><span class="sub-tittle-team">Sub Title</span> Daniel Doe</h3>
+                            <p>Lorem Ipsum has been the industry's standard since the 1500s.</p>
+                            <ul class="top-right-info text-center">
+
+                                <li class="ml-3 mr-1">
+                                    <a href="#">
+                                            <span class="fa fa-facebook-f"></span>
+                                        </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                            <span class="fa fa-twitter"></span>
+                                        </a>
+                                </li>
+                                <li class="mx-1">
+                                    <a href="#">
+                                            <span class="fa fa-google-plus"></span>
+                                        </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="well">
-                    <h3>Widgets, Menus, Images &amp; Includes</h3>
-                    <p>Widgets are easy to add to any template since they can be injected with the <code>&#64;menu('slug')</code>, <code>&#64;widget('slug')</code> or <code>&#64;images('tag')</code>. If you don't suppy a tag for the images you will get all images. To include a theme view you can easily use: <code>&#64;theme('path.in.theme')</code>.</p>
-                </div>
-                <br>
+
+
             </div>
         </div>
-    @endif
+    </section>
+    <!--//team -->
+    <!-- Gallery -->
+    <section class="gallery py-5" id="gallery">
+        <div class="container py-lg-5">
+            <h3 class="tittle text-center mb-lg-5 mb-3"><span class="sub-tittle two">Latest Info</span> Our Gallery</h3>
+            <div class="row news-grids pb-lg-5 mt-3 text-center">
+                <div class="col-md-4 gal-img">
+                    <a href="#gal1"><img src="images/2.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 gal-img">
+                    <a href="#gal2"><img src="images/3.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 gal-img">
+                    <a href="#gal3"><img src="images/4.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 gal-img mt-lg-4">
+                    <a href="#gal4"><img src="images/5.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 gal-img mt-lg-4">
+                    <a href="#gal5"><img src="images/6.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 gal-img mt-lg-4">
+                    <a href="#gal6"><img src="images/7.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 gal-img mt-lg-4">
+                    <a href="#gal7"><img src="images/8.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 gal-img mt-lg-4">
+                    <a href="#gal8"><img src="images/9.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 gal-img mt-lg-4">
+                    <a href="#gal9"><img src="images/10.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- popup-->
+    <div id="gal1" class="pop-overlay animate">
+        <div class="popup">
+            <img src="images/2.jpg" alt="Popup Image" class="img-fluid" />
+            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+            <a class="close" href="#gallery">&times;</a>
+        </div>
+    </div>
+    <!-- //popup -->
 
-</div>
-@endsection
+    <!-- popup-->
+    <div id="gal2" class="pop-overlay animate">
+        <div class="popup">
+            <img src="images/3.jpg" alt="Popup Image" class="img-fluid" />
+            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+            <a class="close" href="#gallery">&times;</a>
+        </div>
+    </div>
+    <!-- //popup -->
+    <!-- popup-->
+    <div id="gal3" class="pop-overlay animate">
+        <div class="popup">
+            <img src="images/4.jpg" alt="Popup Image" class="img-fluid" />
+            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+            <a class="close" href="#gallery">&times;</a>
+        </div>
+    </div>
+    <!-- //popup3 -->
+    <!-- popup-->
+    <div id="gal4" class="pop-overlay animate">
+        <div class="popup">
+            <img src="images/5.jpg" alt="Popup Image" class="img-fluid" />
+            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+            <a class="close" href="#gallery">&times;</a>
+        </div>
+    </div>
+    <!-- //popup -->
+    <!-- popup-->
+    <div id="gal5" class="pop-overlay animate">
+        <div class="popup">
+            <img src="images/6.jpg" alt="Popup Image" class="img-fluid" />
+            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+            <a class="close" href="#gallery">&times;</a>
+        </div>
+    </div>
+    <!-- //popup -->
+    <!-- popup-->
+    <div id="gal6" class="pop-overlay animate">
+        <div class="popup">
+            <img src="images/7.jpg" alt="Popup Image" class="img-fluid" />
+            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+            <a class="close" href="#gallery">&times;</a>
+        </div>
+    </div>
+    <!-- //popup -->
+    <!-- popup-->
+    <div id="gal7" class="pop-overlay animate">
+        <div class="popup">
+            <img src="images/8.jpg" alt="Popup Image" class="img-fluid" />
+            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+            <a class="close" href="#">&times;</a>
+        </div>
+    </div>
+    <!-- //popup -->
+    <!-- popup-->
+    <div id="gal8" class="pop-overlay animate">
+        <div class="popup">
+            <img src="images/9.jpg" alt="Popup Image" class="img-fluid" />
+            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+            <a class="close" href="#gallery">&times;</a>
+        </div>
+    </div>
+    <!-- //popup -->
+    <!-- popup-->
+    <div id="gal9" class="pop-overlay animate">
+        <div class="popup">
+            <img src="images/10.jpg" alt="Popup Image" class="img-fluid" />
+            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+            <a class="close" href="#gallery">&times;</a>
+        </div>
+    </div>
+    <!-- //popup -->
+    <!-- popup-->
+    <div id="gal10" class="pop-overlay animate">
+        <div class="popup">
+            <img src="images/10.jpg" alt="Popup Image" class="img-fluid" />
+            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+            <a class="close" href="#gallery">&times;</a>
+        </div>
+    </div>
+    <!-- //popup -->
+    <!-- //news -->
+    <!-- news -->
+    <section class="news py-5" id="news">
+        <div class="container py-lg-5">
+            <h3 class="tittle text-center mb-lg-5 mb-3"><span class="sub-tittle">Latest Info</span> Our News</h3>
+            <div class="row news-grids pb-lg-5 mt-3 text-center">
+                <div class="col-md-4 newsgrid1">
+                    <img src="images/2.jpg" alt="news image" class="img-fluid">
+                    <h4 class="mt-4">Integer porttitor</h4>
+                    <p class="mt-4">Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. </p>
+                    <a class="btn btn-primary mt-lg-4 mt-3 learn-link-bnr1" href="#popup2" role="button">Learn More</a>
+                </div>
+                <div class="col-md-4 newsgrid1 newsgrid2">
+                    <img src="images/3.jpg" alt="news image" class="img-fluid">
+                    <h4 class=" mt-4">Integer porttitor</h4>
+                    <p class="mt-4">Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut.</p>
+                    <a class="btn btn-primary mt-lg-4 mt-3 learn-link-bnr1" href="#popup3" role="button">Learn More</a>
+                </div>
+                <div class="col-md-4 newsgrid1 newsgrid3">
+                    <img src="images/4.jpg" alt="news image" class="img-fluid">
+                    <h4 class=" mt-4">Integer porttitor</h4>
+                    <p class="mt-4">Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut.</p>
+                    <a class="btn btn-primary mt-lg-4 mt-3 learn-link-bnr1" href="#popup4" role="button">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- popup2 -->
+    <div id="popup2" class="pop-overlay animate">
+        <div class="popup">
+            <img src="images/2.jpg" alt="Popup Image" class="img-fluid" />
+            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor. Vestibulum at dui nunc. Nulla viverra pharetra sem, eget pulvinar neque pharetra ac int. lorem ipsum Vestibulum.</p>
+            <a class="close" href="#news">&times;</a>
+        </div>
+    </div>
+    <!-- //popup4 -->
+    <!-- popup3 -->
+    <div id="popup3" class="pop-overlay animate">
+        <div class="popup">
+            <img src="images/3.jpg" alt="Popup Image" class="img-fluid" />
+            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor. Vestibulum at dui nunc. Nulla viverra pharetra sem, eget pulvinar neque pharetra ac int. lorem ipsum Vestibulum.</p>
+            <a class="close" href="#news">&times;</a>
+        </div>
+    </div>
+    <!-- //popup3 -->
+    <!-- popup4 -->
+    <div id="popup4" class="pop-overlay animate">
+        <div class="popup">
+            <img src="images/4.jpg" alt="Popup Image" class="img-fluid" />
+            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor. Vestibulum at dui nunc. Nulla viverra pharetra sem, eget pulvinar neque pharetra ac int. lorem ipsum Vestibulum.</p>
+            <a class="close" href="#news">&times;</a>
+        </div>
+    </div>
+    <!-- //popup4 -->
 
-@section('cms')
-    @if (isset($page))
-        @edit('pages', $page->id)
-    @endif
-@endsection
+    <!-- //news -->
+    <!--/team -->
+    <section class="banner-bottom py-lg-5 py-4" id="testimonials">
+        <div class="container py-lg-5">
+            <div class="inner-sec-w3ls-pyt speak">
+                <h3 class="tittle text-center my-lg-5 my-3"><span class="sub-tittle">Our Clients</span> What Users Say ?</h3>
+                <div class="row mt-lg-5 mt-4">
+
+                    <div class="col-md-6 team-gd test-grid text-center">
+                        <div class="team-img mb-4">
+                            <img src="images/team1.jpg" class="img-fluid" alt="user-image">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="mt-md-4 mt-3"><span class="sub-tittle-team">Sub Title</span> Mariana Noe</h3>
+                            <p>Lorem Ipsum has been the industry's standard since the 1500s.Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullamcorper dui turpis.</p>
+                            <ul class="top-right-info text-center">
+
+                                <li class="ml-3 mr-1">
+                                    <a href="#">
+                                            <span class="fa fa-facebook-f"></span>
+                                        </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                            <span class="fa fa-twitter"></span>
+                                        </a>
+                                </li>
+                                <li class="mx-1">
+                                    <a href="#">
+                                            <span class="fa fa-google-plus"></span>
+                                        </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 team-gd test-grid text-center">
+                        <div class="team-img mb-4">
+                            <img src="images/team2.jpg" class="img-fluid" alt="user-image">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="mt-md-4 mt-3"><span class="sub-tittle-team">Sub Title</span> Daniel Doe</h3>
+                            <p>Lorem Ipsum has been the industry's standard since the 1500s.Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullamcorper dui turpis.</p>
+                            <ul class="top-right-info text-center">
+                                <li class="ml-3 mr-1">
+                                    <a href="#">
+                                            <span class="fa fa-facebook-f"></span>
+                                        </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                            <span class="fa fa-twitter"></span>
+                                        </a>
+                                </li>
+                                <li class="mx-1">
+                                    <a href="#">
+                                            <span class="fa fa-google-plus"></span>
+                                        </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!--//team -->
+    <!-- contact -->
+    <section class="contact py-5" id="contact">
+        <div class="container py-lg-5">
+            <h3 class="tittle two text-center"><span class="sub-tittle">Find Us</span> Contact Info</h3>
+            <div class="text-center">
+                <p class="main_p4 mt-4 mb-4 pt-2 text-center mx-auto">Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. Proin ac fermentum est. Cras mi ipsum,</p>
+            </div>
+            <div class="row contact-top">
+                <div class="col-lg-6 contact_grid_left">
+                    <ul class="list-unstyled">
+                        <li>
+                            <div class="row">
+                                <div class="col-3">
+                                    <i class="fa fa-home"></i>
+                                </div>
+                                <div class="col-9">
+                                    <h6>Address</h6>
+                                    <p>The company name
+                                        <br>5768 Morris Park,
+                                        <br>New York City. </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-3">
+                                    <i class="fa fa-comment"></i>
+                                </div>
+                                <div class="col-9">
+                                    <h6>Social</h6>
+                                    <p><a href="#">Facebook.com</a>
+                                        <br><a href="#">twitter.com</a>
+                                        <br><a href="#">dribble.com</a> </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mt-3">
+                            <div class="row">
+                                <div class="col-3">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <div class="col-9">
+                                    <h6>Email</h6>
+                                    <a href="mailto:info@example.com">mail@example.com</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mt-5">
+                            <div class="row">
+                                <div class="col-3">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <div class="col-9">
+                                    <h6>Phone</h6>
+                                    <p>1234567890</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 contact_grid_right">
+                    <form action="#" method="post">
+                        <div class="row contact_top">
+                            <div class="col-sm-6">
+                                <input type="text" name="Name" placeholder="Name" required="">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="email" name="Email" placeholder="Email" required="">
+                            </div>
+                        </div>
+                        <textarea name="Message" onfocus="this.value='' ;" onblur="if (this.value=='' ) {this.value='Message...' ;}" required="">Message...</textarea>
+                        <input type="submit" value="Send">
+                        <input type="reset" value="Reset">
+                        <div class="clearfix"> </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="cpy-right-w3layouts-pvt text-center py-5">
+                <p class="mb-3">© 2018 Stalled. All rights reserved | Design by
+                    <a href="http://w3layouts.com"> W3layouts.</a>
+                </p>
+                <a href="#home" class="move-top scroll"><span class="fa fa-angle-up" aria-hidden="true"></span></a>
+
+            </div>
+        </div>
+    </section>
+    <!-- //contact -->
+    <!-- footer -->
+
+    <!-- //footer -->
+
+</body>
+
+</html>
