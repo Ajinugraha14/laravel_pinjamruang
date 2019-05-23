@@ -157,6 +157,7 @@ Route::post('ruangs/search', [
 */
 
 Route::resource('pinjams', 'PinjamsController', ['except' => ['show']]);
+Route::get('user/pinjam', 'PinjamsController@peminjaman');
 Route::post('pinjams/search', [
     'as' => 'pinjams.search',
     'uses' => 'PinjamsController@search'

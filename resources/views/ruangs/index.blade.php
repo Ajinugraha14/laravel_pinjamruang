@@ -16,7 +16,9 @@
             {!! Form::close() !!}
         </div>
         <h1 class="pull-left">Ruangs</h1>
+        @if (Auth::user()->hasrole('admin'))
         <a class="btn btn-primary pull-right" style="margin-top: 25px;margin-right: 10px" href="{!! route('ruangs.create') !!}">Add New</a>
+        @endif
     </div>
 
     <div class="col-md-12">
@@ -43,13 +45,18 @@
                             @endif
                         </td>
                         <td>
+                            @if($ruang->status=='0')
                             <a href="{!! route('pinjams.create', ['id'=>$ruang->id]) !!}" class="btn btn-warning"><i class="fa fa-book"> Pinjam Ruangan</i></a>
+                            @endif
+                            
+                            @if (Auth::user()->hasrole('admin'))
                             <a href="{!! route('ruangs.edit', [$ruang->id]) !!}" class="btn btn-info"><i class="fa fa-pencil"> Edit</i></a>
                             <form method="post" action="{!! route('ruangs.destroy', [$ruang->id]) !!}">
                                 {!! csrf_field() !!}
                                 {!! method_field('DELETE') !!}
                                 <button type="submit" onclick="return confirm('Are you sure you want to delete this ruang?')" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</button>
                             </form>
+                            @endif
                         </td>
                     </tr>
                 @endforeach

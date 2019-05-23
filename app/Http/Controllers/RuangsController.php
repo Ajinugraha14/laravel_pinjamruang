@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Services\RuangService;
 use App\Http\Requests\RuangCreateRequest;
 use App\Http\Requests\RuangUpdateRequest;
+use App\Models\Pinjam;
 
 class RuangsController extends Controller
 {
@@ -100,6 +101,9 @@ class RuangsController extends Controller
      */
     public function update(RuangUpdateRequest $request, $id)
     {
+        if ($request->pinjam) {
+            Pinjam::find($request->pinjam)->update(['status'=>'2']);
+        }
         $result = $this->service->update($id, $request->except('_token'));
 
         if ($result) {

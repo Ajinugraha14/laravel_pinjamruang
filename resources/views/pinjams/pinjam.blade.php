@@ -25,6 +25,7 @@
                     <th>Ruang</th>
                     <th>Dari</th>
                     <th>Sampai</th>
+                    <th>Status</th>
                     <th width="50px">Action</th>
                 </thead>
                 <tbody>
@@ -37,20 +38,24 @@
                         <td>{{$pinjam->pinjam}}</td>
                         <td>{{$pinjam->kembali}}</td>
                         <td>
-                            @if(!$pinjam->status=='1')
-                            {!! Form::model($pinjam, ['route' => ['pinjams.update', $pinjam->id], 'method' => 'patch']) !!}
+                            @if($pinjam->status=='0')
+                            <button class="btn btn-default fa fa-hourglass">menunggu konfirmasi</button>
+                            @elseif($pinjam->status=='1')
+                            <button class="btn btn-success fa fa-check">diijinkan</button>
+                            @else
+                            <button class="btn btn-default fa fa-check">selesai</button>
+                            @endif
+                        </td>
+                        <td>
+                            @if($pinjam->status=='1')
+                            {!! Form::model($pinjam, ['route' => ['ruangs.update', $pinjam->ruang_id], 'method' => 'patch']) !!}
                                 {!! csrf_field() !!}
-                                <input type="hidden" name="status" value="1">
-                                <input type="hidden" name="ruang_id" value="{{$pinjam->ruang_id}}">
-                                <button type="submit" class="btn btn-warning"><i class="fa fa-check"></i> Ijinkan</button>
+                                <input type="hidden" name="status" value="0">
+                                <input type="hidden" name="pinjam" value="{{$pinjam->id}}">
+                                <button type="submit" class="btn btn-warning"><i class="fa fa-check"></i> Selesai</button>
                              {!! Form::close() !!}
-                             @endif
-                            <a href="{!! route('pinjams.edit', [$pinjam->id]) !!}" class="btn btn-info"><i class="fa fa-pencil"> Edit</i></a>
-                            <form method="post" action="{!! route('pinjams.destroy', [$pinjam->id]) !!}">
-                                {!! csrf_field() !!}
-                                {!! method_field('DELETE') !!}
-                                <button type="submit" onclick="return confirm('Are you sure you want to delete this pinjam?')" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</button>
-                            </form>
+                            
+                            @endif
                         </td>
                     </tr>
                 @endforeach

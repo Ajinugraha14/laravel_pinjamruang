@@ -19,33 +19,3 @@ DB_PASSWORD=
 11. php artisan db:seed
 12. php artisan serve
 
-
-
-custom:
-1. buat crud
-php artisan crudmaker:new [nama table] --ui --migration --schema="[nama field]:[type data]"
-2. ganti menu samping
-resources\views\vendor\cms\dashboard\panel.blade.php
-3. masukin template
-copy yang dibawah :
-@extends('cms::layouts.dashboard')
-
-@section('pageTitle') [judul halaman] @stop //optional
-
-@section('content')
-[isi konten]
-@stop
-
-4. nambah nampilin data di tampilan tabel
-resources\views\[nama table]s\index.blade.php
-tinggal edit <th> </th> sama nambah <td></td> 
-
-5. kalo perlu package cari di googlenya
-laravel [nama package]
-*) soal cara pake packagenya biasanya ada dokumentasinya
-
-6. edit halaman awal "/"
-lokasinya : resources\themes\default\pages\home.blade.php
-
-7. custom form
-lokasinya : resources\views\[nama table]s\create.blade.php

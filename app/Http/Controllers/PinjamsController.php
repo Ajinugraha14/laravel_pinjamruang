@@ -7,6 +7,9 @@ use App\Http\Controllers\Controller;
 use App\Services\PinjamService;
 use App\Http\Requests\PinjamCreateRequest;
 use App\Http\Requests\PinjamUpdateRequest;
+use App\Models\Pinjam;
+use App\Models\Ruang;
+use Auth;
 
 class PinjamsController extends Controller
 {
@@ -55,6 +58,11 @@ class PinjamsController extends Controller
      */
     public function store(PinjamCreateRequest $request)
     {
+        $request->merge([
+            'user_id'=>Auth::user()->id,
+            'status'=>'0',
+        ]);
+
         $result = $this->service->create($request->except('_token'));
 
         if ($result) {
@@ -62,6 +70,7 @@ class PinjamsController extends Controller
         }
 
         return redirect(route('pinjams.index'))->withErrors('Failed to create');
+        // return $request;
     }
 
     /**
@@ -97,6 +106,8 @@ class PinjamsController extends Controller
      */
     public function update(PinjamUpdateRequest $request, $id)
     {
+        $ruang = Ruang::find($request->ruang_id)->update(['status'=>'1']);
+
         $result = $this->service->update($id, $request->except('_token'));
 
         if ($result) {
@@ -121,5 +132,11 @@ class PinjamsController extends Controller
         }
 
         return redirect(route('pinjams.index'))->withErrors('Failed to delete');
+    }
+
+    public function peminjaman()
+    {
+        $pinjams = Pinjam::where('user_id',Auth::user()->id)->paginate(25);
+        return view('pinjams.pinjam')->with('pinjams',$pinjams);
     }
 }

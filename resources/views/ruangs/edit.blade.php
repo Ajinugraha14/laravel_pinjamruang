@@ -10,9 +10,14 @@
     {!! Form::model($ruang, ['route' => ['ruangs.update', $ruang->id], 'method' => 'patch']) !!}
 
     @input_maker_label('Nama Ruangan: ')
-    @input_maker_create('name', ['type' => 'string'], $ruang)
+    
 
+    @if (!Auth::user()->hasrole('admin'))
+    @input_maker_create('', ['type' => 'string','custom'=>'readonly', 'default_value'=>$ruang->name])
+    @else
+    @input_maker_create('name', ['type' => 'string'], $ruang)
     {!! Form::submit('Update') !!}
+    @endif
 
     {!! Form::close() !!}
 </div>
