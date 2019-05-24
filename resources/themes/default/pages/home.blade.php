@@ -1,15 +1,8 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-
 <!DOCTYPE html>
 <html lang="zxx">
 
 <head>
-    <title>Stalled Business Bootstrap Responsive Template | Home :: W3layouts</title>
+    <title>Aplikasi Peminjaman Ruang</title>
     <!-- Meta tag Keywords -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
@@ -111,451 +104,41 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <section class="about py-5" id="about">
         <div class="container">
             <div class="inner-sec-w3ls-pyt py-lg-5 py-3">
-                <h3 class="tittle text-center mb-lg-5 mb-3 px-lg-5"><span class="sub-tittle">About.</span>Tentang Aplikasi</h3>
+                <h3 class="tittle text-center mb-lg-5 mb-3 px-lg-5"><span class="sub-tittle">About.</span>USER GUIDE</h3>
                 <div class="feature-grids row mt-3 mb-lg-5 mb-3 text-center">
                     <div class="col-lg-4">
                         <div class="bottom-gd px-3">
                             <span class="fa fa-building-o" aria-hidden="true"></span>
-                            <h3 class="my-4">Market Research</h3>
-                            <p>Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullamcorper dui turpis.</p>
+                            <h3 class="my-4">LOGIN</h3>
+                            <p>masukkan email dan password.</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="bottom-gd2-active px-3">
                             <span class="fa fa-cogs" aria-hidden="true"></span>
-                            <h3 class="my-4">Keyword Targeting</h3>
-                            <p>Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullamcorper dui turpis.</p>
+                            <h3 class="my-4">PILIH RUANG YANG KOSONG</h3>
+                            <p>agar bisa meminjam ruangan,harus memilih ruangan yang kosong agar bisa dipinjam.</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="bottom-gd px-3">
                             <span class="fa fa-cogs" aria-hidden="true"></span>
-                            <h3 class="my-4">Email Marketing</h3>
-                            <p>Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullamcorper dui turpis.</p>
+                            <h3 class="my-4">ISI FORM PEMINJAMAN</h3>
+                            <p>masukan data sesuai dengan yang dibutuhkan,jika data sudah valid,selamat anda telah meminjam ruangan.</p>
                         </div>
                     </div>
 
                 </div>
-                <!-- services -->
-                <div class="fetured-info pt-lg-5" id="services">
-                    <h3 class="tittle  text-center my-lg-5 my-3"><span class="sub-tittle">What we do</span> Our Featured Services</h3>
-                    <div class="row fetured-sec mt-lg-5 mt-3">
-                        <div class="col-lg-6 p-0">
-                            <div class="img-effect">
-                                <img src="images/1.jpg" alt="" class="img-fluid image1">
-                            </div>
-
-                        </div>
-                        <div class="col-lg-6 serv_bottom feature-grids">
-                            <div class="featured-left text-left">
-                                <div class="bottom-gd px-3">
-                                    <span class="fa fa-hospital-o" aria-hidden="true"></span>
-                                    <h3 class="my-4">
-                                        Start Your Campaign</h3>
-                                    <p>Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullamcorper dui turpis.</p>
-                                </div>
-                                <div class="bottom-gd fea active p-4">
-                                    <span class="fa fa-key" aria-hidden="true"></span>
-                                    <h3 class="my-3">Engage New Users</h3>
-                                    <p>Integer sit amet mattis quam, sit amet ultricies velit.convallis at tellus. Nulla quis lorem ipnut libero malesuada feugiat..</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <!-- //services -->
+               
         </div>
     </section>
-    <!-- //ab -->
-    <!--/counter-->
-    <section class="stats py-lg-5 py-4" id="stats">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col">
-                    <div class="counter">
-                        <h3 class="timer count-title count-number">100</h3>
-                        <p class="count-text">Support</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="counter">
-                        <h3 class="timer count-title count-number">1700</h3>
-                        <p class="count-text">Happy Hours</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="counter">
-                        <h3 class="timer count-title count-number">1200</h3>
-                        <p class="count-text">Trusted Sub Titles</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="counter">
-                        <h3 class="timer count-title count-number">157</h3>
-                        <p class="count-text">Cups of Coffee</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--//counter-->
-    <!--/team -->
-    <section class="banner-bottom py-lg-5 py-4" id="team">
-        <div class="container py-lg-5">
-            <div class="inner-sec-w3ls-pyt speak">
-                <h3 class="tittle text-center my-lg-5 my-3"><span class="sub-tittle">Amazing People</span> Professional Team</h3>
-                <div class="row mt-lg-5 mt-4">
-                    <div class="col-md-4 team-gd text-center">
-                        <div class="team-img mb-4">
-                            <img src="images/team2.jpg" class="img-fluid" alt="user-image">
-                        </div>
-                        <div class="team-info">
-                            <h3 class="mt-md-4 mt-3"><span class="sub-tittle-team">Sub Title</span> Jason Donoghue</h3>
-                            <p>Lorem Ipsum has been the industry's standard since the 1500s.</p>
-                            <ul class="top-right-info text-center">
-
-                                <li class="ml-3 mr-1">
-                                    <a href="#">
-                                            <span class="fa fa-facebook-f"></span>
-                                        </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                            <span class="fa fa-twitter"></span>
-                                        </a>
-                                </li>
-                                <li class="mx-1">
-                                    <a href="#">
-                                            <span class="fa fa-google-plus"></span>
-                                        </a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 team-gd second text-center">
-                        <div class="team-img mb-4">
-                            <img src="images/team1.jpg" class="img-fluid" alt="user-image">
-                        </div>
-                        <div class="team-info">
-                            <h3 class="mt-md-4 mt-3"><span class="sub-tittle-team">Sub Title</span> Mariana Noe</h3>
-                            <p>Lorem Ipsum has been the industry's standard since the 1500s.</p>
-                            <ul class="top-right-info text-center">
-
-                                <li class="ml-3 mr-1">
-                                    <a href="#">
-                                            <span class="fa fa-facebook-f"></span>
-                                        </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                            <span class="fa fa-twitter"></span>
-                                        </a>
-                                </li>
-                                <li class="mx-1">
-                                    <a href="#">
-                                            <span class="fa fa-google-plus"></span>
-                                        </a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-4 team-gd text-center">
-                        <div class="team-img mb-4">
-                            <img src="images/team2.jpg" class="img-fluid" alt="user-image">
-                        </div>
-                        <div class="team-info">
-                            <h3 class="mt-md-4 mt-3"><span class="sub-tittle-team">Sub Title</span> Daniel Doe</h3>
-                            <p>Lorem Ipsum has been the industry's standard since the 1500s.</p>
-                            <ul class="top-right-info text-center">
-
-                                <li class="ml-3 mr-1">
-                                    <a href="#">
-                                            <span class="fa fa-facebook-f"></span>
-                                        </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                            <span class="fa fa-twitter"></span>
-                                        </a>
-                                </li>
-                                <li class="mx-1">
-                                    <a href="#">
-                                            <span class="fa fa-google-plus"></span>
-                                        </a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-    <!--//team -->
-    <!-- Gallery -->
-    <section class="gallery py-5" id="gallery">
-        <div class="container py-lg-5">
-            <h3 class="tittle text-center mb-lg-5 mb-3"><span class="sub-tittle two">Latest Info</span> Our Gallery</h3>
-            <div class="row news-grids pb-lg-5 mt-3 text-center">
-                <div class="col-md-4 gal-img">
-                    <a href="#gal1"><img src="images/2.jpg" alt="news image" class="img-fluid"></a>
-                </div>
-                <div class="col-md-4 gal-img">
-                    <a href="#gal2"><img src="images/3.jpg" alt="news image" class="img-fluid"></a>
-                </div>
-                <div class="col-md-4 gal-img">
-                    <a href="#gal3"><img src="images/4.jpg" alt="news image" class="img-fluid"></a>
-                </div>
-                <div class="col-md-4 gal-img mt-lg-4">
-                    <a href="#gal4"><img src="images/5.jpg" alt="news image" class="img-fluid"></a>
-                </div>
-                <div class="col-md-4 gal-img mt-lg-4">
-                    <a href="#gal5"><img src="images/6.jpg" alt="news image" class="img-fluid"></a>
-                </div>
-                <div class="col-md-4 gal-img mt-lg-4">
-                    <a href="#gal6"><img src="images/7.jpg" alt="news image" class="img-fluid"></a>
-                </div>
-                <div class="col-md-4 gal-img mt-lg-4">
-                    <a href="#gal7"><img src="images/8.jpg" alt="news image" class="img-fluid"></a>
-                </div>
-                <div class="col-md-4 gal-img mt-lg-4">
-                    <a href="#gal8"><img src="images/9.jpg" alt="news image" class="img-fluid"></a>
-                </div>
-                <div class="col-md-4 gal-img mt-lg-4">
-                    <a href="#gal9"><img src="images/10.jpg" alt="news image" class="img-fluid"></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- popup-->
-    <div id="gal1" class="pop-overlay animate">
-        <div class="popup">
-            <img src="images/2.jpg" alt="Popup Image" class="img-fluid" />
-            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
-            <a class="close" href="#gallery">&times;</a>
-        </div>
-    </div>
-    <!-- //popup -->
-
-    <!-- popup-->
-    <div id="gal2" class="pop-overlay animate">
-        <div class="popup">
-            <img src="images/3.jpg" alt="Popup Image" class="img-fluid" />
-            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
-            <a class="close" href="#gallery">&times;</a>
-        </div>
-    </div>
-    <!-- //popup -->
-    <!-- popup-->
-    <div id="gal3" class="pop-overlay animate">
-        <div class="popup">
-            <img src="images/4.jpg" alt="Popup Image" class="img-fluid" />
-            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
-            <a class="close" href="#gallery">&times;</a>
-        </div>
-    </div>
-    <!-- //popup3 -->
-    <!-- popup-->
-    <div id="gal4" class="pop-overlay animate">
-        <div class="popup">
-            <img src="images/5.jpg" alt="Popup Image" class="img-fluid" />
-            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
-            <a class="close" href="#gallery">&times;</a>
-        </div>
-    </div>
-    <!-- //popup -->
-    <!-- popup-->
-    <div id="gal5" class="pop-overlay animate">
-        <div class="popup">
-            <img src="images/6.jpg" alt="Popup Image" class="img-fluid" />
-            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
-            <a class="close" href="#gallery">&times;</a>
-        </div>
-    </div>
-    <!-- //popup -->
-    <!-- popup-->
-    <div id="gal6" class="pop-overlay animate">
-        <div class="popup">
-            <img src="images/7.jpg" alt="Popup Image" class="img-fluid" />
-            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
-            <a class="close" href="#gallery">&times;</a>
-        </div>
-    </div>
-    <!-- //popup -->
-    <!-- popup-->
-    <div id="gal7" class="pop-overlay animate">
-        <div class="popup">
-            <img src="images/8.jpg" alt="Popup Image" class="img-fluid" />
-            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
-            <a class="close" href="#">&times;</a>
-        </div>
-    </div>
-    <!-- //popup -->
-    <!-- popup-->
-    <div id="gal8" class="pop-overlay animate">
-        <div class="popup">
-            <img src="images/9.jpg" alt="Popup Image" class="img-fluid" />
-            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
-            <a class="close" href="#gallery">&times;</a>
-        </div>
-    </div>
-    <!-- //popup -->
-    <!-- popup-->
-    <div id="gal9" class="pop-overlay animate">
-        <div class="popup">
-            <img src="images/10.jpg" alt="Popup Image" class="img-fluid" />
-            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
-            <a class="close" href="#gallery">&times;</a>
-        </div>
-    </div>
-    <!-- //popup -->
-    <!-- popup-->
-    <div id="gal10" class="pop-overlay animate">
-        <div class="popup">
-            <img src="images/10.jpg" alt="Popup Image" class="img-fluid" />
-            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
-            <a class="close" href="#gallery">&times;</a>
-        </div>
-    </div>
-    <!-- //popup -->
-    <!-- //news -->
-    <!-- news -->
-    <section class="news py-5" id="news">
-        <div class="container py-lg-5">
-            <h3 class="tittle text-center mb-lg-5 mb-3"><span class="sub-tittle">Latest Info</span> Our News</h3>
-            <div class="row news-grids pb-lg-5 mt-3 text-center">
-                <div class="col-md-4 newsgrid1">
-                    <img src="images/2.jpg" alt="news image" class="img-fluid">
-                    <h4 class="mt-4">Integer porttitor</h4>
-                    <p class="mt-4">Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. </p>
-                    <a class="btn btn-primary mt-lg-4 mt-3 learn-link-bnr1" href="#popup2" role="button">Learn More</a>
-                </div>
-                <div class="col-md-4 newsgrid1 newsgrid2">
-                    <img src="images/3.jpg" alt="news image" class="img-fluid">
-                    <h4 class=" mt-4">Integer porttitor</h4>
-                    <p class="mt-4">Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut.</p>
-                    <a class="btn btn-primary mt-lg-4 mt-3 learn-link-bnr1" href="#popup3" role="button">Learn More</a>
-                </div>
-                <div class="col-md-4 newsgrid1 newsgrid3">
-                    <img src="images/4.jpg" alt="news image" class="img-fluid">
-                    <h4 class=" mt-4">Integer porttitor</h4>
-                    <p class="mt-4">Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut.</p>
-                    <a class="btn btn-primary mt-lg-4 mt-3 learn-link-bnr1" href="#popup4" role="button">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- popup2 -->
-    <div id="popup2" class="pop-overlay animate">
-        <div class="popup">
-            <img src="images/2.jpg" alt="Popup Image" class="img-fluid" />
-            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor. Vestibulum at dui nunc. Nulla viverra pharetra sem, eget pulvinar neque pharetra ac int. lorem ipsum Vestibulum.</p>
-            <a class="close" href="#news">&times;</a>
-        </div>
-    </div>
-    <!-- //popup4 -->
-    <!-- popup3 -->
-    <div id="popup3" class="pop-overlay animate">
-        <div class="popup">
-            <img src="images/3.jpg" alt="Popup Image" class="img-fluid" />
-            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor. Vestibulum at dui nunc. Nulla viverra pharetra sem, eget pulvinar neque pharetra ac int. lorem ipsum Vestibulum.</p>
-            <a class="close" href="#news">&times;</a>
-        </div>
-    </div>
-    <!-- //popup3 -->
-    <!-- popup4 -->
-    <div id="popup4" class="pop-overlay animate">
-        <div class="popup">
-            <img src="images/4.jpg" alt="Popup Image" class="img-fluid" />
-            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor. Vestibulum at dui nunc. Nulla viverra pharetra sem, eget pulvinar neque pharetra ac int. lorem ipsum Vestibulum.</p>
-            <a class="close" href="#news">&times;</a>
-        </div>
-    </div>
-    <!-- //popup4 -->
-
-    <!-- //news -->
-    <!--/team -->
-    <section class="banner-bottom py-lg-5 py-4" id="testimonials">
-        <div class="container py-lg-5">
-            <div class="inner-sec-w3ls-pyt speak">
-                <h3 class="tittle text-center my-lg-5 my-3"><span class="sub-tittle">Our Clients</span> What Users Say ?</h3>
-                <div class="row mt-lg-5 mt-4">
-
-                    <div class="col-md-6 team-gd test-grid text-center">
-                        <div class="team-img mb-4">
-                            <img src="images/team1.jpg" class="img-fluid" alt="user-image">
-                        </div>
-                        <div class="team-info">
-                            <h3 class="mt-md-4 mt-3"><span class="sub-tittle-team">Sub Title</span> Mariana Noe</h3>
-                            <p>Lorem Ipsum has been the industry's standard since the 1500s.Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullamcorper dui turpis.</p>
-                            <ul class="top-right-info text-center">
-
-                                <li class="ml-3 mr-1">
-                                    <a href="#">
-                                            <span class="fa fa-facebook-f"></span>
-                                        </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                            <span class="fa fa-twitter"></span>
-                                        </a>
-                                </li>
-                                <li class="mx-1">
-                                    <a href="#">
-                                            <span class="fa fa-google-plus"></span>
-                                        </a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6 team-gd test-grid text-center">
-                        <div class="team-img mb-4">
-                            <img src="images/team2.jpg" class="img-fluid" alt="user-image">
-                        </div>
-                        <div class="team-info">
-                            <h3 class="mt-md-4 mt-3"><span class="sub-tittle-team">Sub Title</span> Daniel Doe</h3>
-                            <p>Lorem Ipsum has been the industry's standard since the 1500s.Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullamcorper dui turpis.</p>
-                            <ul class="top-right-info text-center">
-                                <li class="ml-3 mr-1">
-                                    <a href="#">
-                                            <span class="fa fa-facebook-f"></span>
-                                        </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                            <span class="fa fa-twitter"></span>
-                                        </a>
-                                </li>
-                                <li class="mx-1">
-                                    <a href="#">
-                                            <span class="fa fa-google-plus"></span>
-                                        </a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-    <!--//team -->
-    <!-- contact -->
+    
+    
     <section class="contact py-5" id="contact">
         <div class="container py-lg-5">
             <h3 class="tittle two text-center"><span class="sub-tittle">Find Us</span> Contact Info</h3>
             <div class="text-center">
-                <p class="main_p4 mt-4 mb-4 pt-2 text-center mx-auto">Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. Proin ac fermentum est. Cras mi ipsum,</p>
+                <p class="main_p4 mt-4 mb-4 pt-2 text-center mx-auto">Aplikasi ini dibuat oleh : Aji Nugraha Hidayat, Bastomi Maulana Gunawan, dan Cecep Rafqi</p>
             </div>
             <div class="row contact-top">
                 <div class="col-lg-6 contact_grid_left">
@@ -567,9 +150,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 </div>
                                 <div class="col-9">
                                     <h6>Address</h6>
-                                    <p>The company name
-                                        <br>5768 Morris Park,
-                                        <br>New York City. </p>
+                                    <p>
+                                        <br>UIN Sunan Gunung Djati
+                                        <br>Bandung </p>
                                 </div>
                             </div>
                         </li>
@@ -578,12 +161,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <div class="col-3">
                                     <i class="fa fa-comment"></i>
                                 </div>
-                                <div class="col-9">
-                                    <h6>Social</h6>
-                                    <p><a href="#">Facebook.com</a>
-                                        <br><a href="#">twitter.com</a>
-                                        <br><a href="#">dribble.com</a> </p>
-                                </div>
+                                
                             </div>
                         </li>
                         <li class="mt-3">
@@ -593,7 +171,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 </div>
                                 <div class="col-9">
                                     <h6>Email</h6>
-                                    <a href="mailto:info@example.com">mail@example.com</a>
+                                    <a href="mailto:info@example.com">zieaji55@gmail.com</a>
                                 </div>
                             </div>
                         </li>
@@ -604,7 +182,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 </div>
                                 <div class="col-9">
                                     <h6>Phone</h6>
-                                    <p>1234567890</p>
+                                    <p>0895347517095</p>
                                 </div>
                             </div>
                         </li>
@@ -629,8 +207,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
             </div>
             <div class="cpy-right-w3layouts-pvt text-center py-5">
-                <p class="mb-3">© 2018 Stalled. All rights reserved | Design by
-                    <a href="http://w3layouts.com"> W3layouts.</a>
+                <p class="mb-3">© 2019 Stalled. All rights reserved
                 </p>
                 <a href="#home" class="move-top scroll"><span class="fa fa-angle-up" aria-hidden="true"></span></a>
 
